@@ -7,6 +7,7 @@ export default function Home() {
                 <li>Cukier</li>
                 <li>Chleb</li>
                 <li>Masło</li>
+                <li>Wędlina</li>
             </ul>
         </main>
     )
