@@ -30,7 +30,7 @@
         "./src/*"
       ],
       "@ui/*": [
-        "./src/components/*"
+        "./src/ui/*"
       ]
     }
   },
