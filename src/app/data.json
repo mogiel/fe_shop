@@ -5,7 +5,61 @@
       "price": 21.37,
       "category": "BLUZA",
       "imageCover": {
-        "src": "https://demo.hyperfunctor.com/_next/image?url=https%3A%2F%2Fapi.hyperfunctor.com%2Fuploads%2Ft0_Fj_Dkv_Rp_Oye_Err_F_Dj8_Q_3ee0d17001.png&w=256&q=75",
+        "src": "https://m.media-amazon.com/images/I/71LFpKcZjGL._AC_SL1305_.jpg",
+        "alt": "Czarna bluza"
+      }
+    },
+    {
+      "name": "Stormtrooper",
+      "price": 12321.37,
+      "category": "Human",
+      "imageCover": {
+        "src": "https://m.media-amazon.com/images/I/61jq1x-n4wL._AC_SL1356_.jpg",
+        "alt": "Stormtrooper"
+      }
+    },
+    {
+      "name": "Boba Fett",
+      "price": 21.37,
+      "category": "Human",
+      "imageCover": {
+        "src": "https://m.media-amazon.com/images/I/51YfOAIDUJL._AC_SL1500_.jpg",
+        "alt": "Boba Fett"
+      }
+    },
+    {
+      "name": "Czarna bluza",
+      "price": 21.37,
+      "category": "BLUZA",
+      "imageCover": {
+        "src": "https://m.media-amazon.com/images/I/71LFpKcZjGL._AC_SL1305_.jpg",
+        "alt": "Czarna bluza"
+      }
+    },
+    {
+      "name": "Stormtrooper",
+      "price": 12321.37,
+      "category": "Human",
+      "imageCover": {
+        "src": "https://m.media-amazon.com/images/I/61jq1x-n4wL._AC_SL1356_.jpg",
+        "alt": "Stormtrooper"
+      }
+    },
+    {
+      "name": "Boba Fett",
+      "price": 21.37,
+      "category": "Human",
+      "imageCover": {
+        "src": "https://m.media-amazon.com/images/I/51YfOAIDUJL._AC_SL1500_.jpg",
+        "alt": "Boba Fett"
+      }
+    },
+    {
+      "name": "Czarna bluza",
+      "price": 21.37,
+      "category": "BLUZA",
+      "imageCover": {
+        "src": "https://m.media-amazon.com/images/I/71LFpKcZjGL._AC_SL1305_.jpg",
         "alt": "Czarna bluza"
       }
     },
