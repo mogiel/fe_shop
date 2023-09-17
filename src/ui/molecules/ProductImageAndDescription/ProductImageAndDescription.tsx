@@ -1,6 +1,6 @@
+import Link from "next/link"
 import { ProductCoverImage } from "@ui/atoms/ProductCoverImage/ProductCoverImage"
 import { ProductListItemDescription } from "@ui/atoms/ProductListItemDescription/ProductListItemDescription"
-import Link from "next/link"
 
 interface Props {
 	product: Product

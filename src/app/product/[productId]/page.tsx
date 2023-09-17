@@ -1,5 +1,5 @@
+import { type Metadata } from "next"
 import { getProductById, getProductsList } from "@api/products"
-import { Metadata } from "next"
 
 export const generateStaticParams = async () => {
 	const products = await getProductsList()
