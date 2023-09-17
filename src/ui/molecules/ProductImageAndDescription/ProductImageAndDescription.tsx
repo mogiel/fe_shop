@@ -8,9 +8,9 @@ interface Props {
 export const ProductImageAndDescription = ({ product }: Props) => {
 	return (
 		<li>
-			<ProductCoverImage imageCover={product.imageCover} />
+			<ProductCoverImage image={product.image} />
 			<ProductListItemDescription
-				name={product.name}
+				name={product.title}
 				category={product.category}
 				price={product.price}
 			/>
