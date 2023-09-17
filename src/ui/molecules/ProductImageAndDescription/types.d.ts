@@ -4,6 +4,7 @@ interface Product {
 	price: number
 	category: string
 	imageCover: ImageCover
+	description: string
 }
 
 interface ImageCover {

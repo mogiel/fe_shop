@@ -24,5 +24,6 @@ export const productResDataToProduct = (product: ProductResData): Product => {
 			src: product.image,
 			alt: product.title,
 		},
+		description: product.description,
 	}
 }
