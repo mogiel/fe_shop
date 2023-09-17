@@ -1,15 +1,9 @@
 interface Product {
-	id: string
-	title: string
+	id?: string
+	name: string
 	price: number
-	description: string
 	category: string
-	rating: {
-		rate: number
-		count: number
-	}
-	image: string
-	longDescription: string
+	imageCover: ImageCover
 }
 
 interface ImageCover {

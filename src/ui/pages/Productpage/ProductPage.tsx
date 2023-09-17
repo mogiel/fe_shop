@@ -8,7 +8,18 @@ export default async function ProductPage() {
 
 	const res = (await fetch("https://naszsklep-api.vercel.app/api/products").then((r) =>
 		r.json(),
-	)) as Product[]
-	console.log(res)
-	return <ProductList products={res} />
+	)) as ProductResData[]
+	const products = res.map(
+		(product: ProductResData): Product => ({
+			id: product.id,
+			name: product.title,
+			price: product.price,
+			category: product.category,
+			imageCover: {
+				src: product.image,
+				alt: product.title,
+			},
+		}),
+	)
+	return <ProductList products={products} />
 }
