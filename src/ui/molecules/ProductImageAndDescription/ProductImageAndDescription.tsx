@@ -1,5 +1,5 @@
-import { ProductCoverImage } from "@/ui/atoms/ProductCoverImage/ProductCoverImage"
-import { ProductListItemDescription } from "@/ui/atoms/ProductListItemDescription/ProductListItemDescription"
+import { ProductCoverImage } from "@ui/atoms/ProductCoverImage/ProductCoverImage"
+import { ProductListItemDescription } from "@ui/atoms/ProductListItemDescription/ProductListItemDescription"
 
 interface Props {
 	product: Product
