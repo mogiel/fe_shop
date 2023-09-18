@@ -1,9 +1,8 @@
 import "./globals.css"
-import type { Metadata } from "next"
+import type { Metadata, Route } from "next"
 import { Inter } from "next/font/google"
 import Link from "next/link"
 import { ActiveLink } from "@ui/atoms/ActiveLink/ActiveLink"
-import { Route } from "next"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,9 +26,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 							"container mx-auto flex items-center justify-center p-6 capitalize text-gray-600 dark:text-gray-300"
 						}
 					>
-						{links.map((link) => (
+						{links.map((link, index: number) => (
 							<li>
 								<ActiveLink
+									key={index}
 									href={link.href}
 									activeClassName={
 										"text-gray-800 dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6"
