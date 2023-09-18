@@ -8,7 +8,7 @@ import { type ReactNode } from "react"
 
 interface Props<T extends string> {
 	children: ReactNode
-	href: Route<T> | URL | any
+	href: Route<T> | URL
 	className?: string
 	activeClassName?: string
 }
