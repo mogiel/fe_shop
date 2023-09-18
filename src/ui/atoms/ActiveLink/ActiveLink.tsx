@@ -8,18 +8,22 @@ import { type ReactNode } from "react"
 
 interface Props<T extends string> {
 	children: ReactNode
-	href: Route<T> | URL
+	href: Route<T> | URL | any
+	className?: string
+	activeClassName?: string
 }
 
-export const ActiveLink = ({ children, href }: Props<string>) => {
+export const ActiveLink = ({
+	children,
+	href,
+	className = "text-blue-400 hover:text-blue-600",
+	activeClassName = "underline",
+}: Props<string>) => {
 	const pathname = usePathname()
 	const isActive = pathname === href
-
+	console.log(pathname === href)
 	return (
-		<Link
-			href={href}
-			className={clsx("text-blue-400 hover:text-blue-600", isActive && "underline")}
-		>
+		<Link href={href} className={clsx(className, isActive && activeClassName)}>
 			{children}
 		</Link>
 	)

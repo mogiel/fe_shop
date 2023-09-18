@@ -1,5 +1,5 @@
 import "./globals.css"
 
 export default function Home() {
-	return "Witaj piękny kawalerze"
+	return <h1 className={"text-center"}>Witaj na stronie sklepu</h1>
 }

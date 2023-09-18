@@ -14,26 +14,48 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
-				<nav>
-					<ul className={"flex justify-center space-x-4"}>
-						<li>
-							<ActiveLink href="/">Strona główna</ActiveLink>
+			<body className={`${inter.className} bg-slate-100`}>
+				<nav className={"bg-white shadow dark:bg-gray-800 "}>
+					<ul
+						className={
+							"container mx-auto flex items-center justify-center p-6 capitalize text-gray-600 dark:text-gray-300"
+						}
+					>
+						<li
+							className={
+								'order-b-2 sm:mx-6" mx-1.5 border-transparent hover:border-blue-500 hover:text-gray-800 dark:hover:text-gray-200'
+							}
+						>
+							<ActiveLink
+								href="/"
+								activeClassName={
+									"text-gray-800 dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6"
+								}
+								className={
+									"mx-1.5 border-b-2 border-transparent hover:border-blue-500 hover:text-gray-800 dark:hover:text-gray-200 sm:mx-6"
+								}
+							>
+								Home
+							</ActiveLink>
 						</li>
 						<li>
-							<ActiveLink href="/products">Produkty</ActiveLink>
+							<ActiveLink
+								href="/products"
+								activeClassName={
+									"text-gray-800 dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6"
+								}
+								className={
+									"mx-1.5 border-b-2 border-transparent hover:border-blue-500 hover:text-gray-800 dark:hover:text-gray-200 sm:mx-6"
+								}
+							>
+								All
+							</ActiveLink>
 						</li>
-						<li>
-							<ActiveLink href={"/regulamin"}>Regulamin</ActiveLink>
-						</li>
-						<li>
-							<ActiveLink href="/polityka-firmy">Polityka firmy</ActiveLink>
-						</li>{" "}
 					</ul>
 				</nav>
 
 				<section
-					className={"mx-auto max-w-md p-12 sm:max-w-2xl sm:py-16 md:max-w-4xl lg:max-w-7xl"}
+					className={"mx-auto mb-24 max-w-md p-12 sm:max-w-2xl sm:py-16 md:max-w-4xl lg:max-w-7xl"}
 				>
 					{children}
 				</section>
@@ -48,7 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 							</Link>
 						</li>
 						<li>
-							<Link href="/polityka-firmy" className="mr-4 hover:underline md:mr-6">
+							<Link href="/polityka-prywatnosci" className="mr-4 hover:underline md:mr-6">
 								Polityka firmy
 							</Link>
 						</li>
