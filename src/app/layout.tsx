@@ -27,9 +27,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						}
 					>
 						{links.map((link, index: number) => (
-							<li>
+							<li key={index}>
 								<ActiveLink
-									key={index}
 									href={link.href}
 									activeClassName={
 										"text-gray-800 dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6"
