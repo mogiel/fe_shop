@@ -4,7 +4,7 @@ import type { Route } from "next"
 import Link from "next/link"
 import clsx from "clsx"
 import { usePathname } from "next/navigation"
-import { type ReactNode } from "react"
+import { type ReactNode, useEffect, useState } from "react"
 
 interface Props<T extends string> {
 	children: ReactNode
@@ -20,8 +20,12 @@ export const ActiveLink = ({
 	activeClassName = "underline",
 }: Props<string>) => {
 	const pathname = usePathname()
-	const isActive = pathname === href
-	console.log(pathname === href)
+	const [isActive, setIsActive] = useState(pathname === href)
+
+	useEffect(() => {
+		setIsActive(pathname === href)
+	}, [pathname, href])
+
 	return (
 		<Link href={href} className={clsx(className, isActive && activeClassName)}>
 			{children}

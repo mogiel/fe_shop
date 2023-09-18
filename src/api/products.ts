@@ -1,9 +1,9 @@
 import { fetch } from "next/dist/compiled/@edge-runtime/primitives"
 
-export const getProductsList = async () => {
-	const res = (await fetch("https://naszsklep-api.vercel.app/api/products").then((r) =>
-		r.json(),
-	)) as ProductResData[]
+export const getProductsList = async (take = 20, offset = 0) => {
+	const res = (await fetch(
+		`https://naszsklep-api.vercel.app/api/products?take=${take}&offset=${offset}`,
+	).then((r) => r.json())) as ProductResData[]
 	return res.map(productResDataToProduct)
 }
 
